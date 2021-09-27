@@ -1,5 +1,5 @@
 var ForagerBee = function() {
-  Bee.call(this, this.color, this.food);
+  Bee.call(this);
   this.age = 10;
   this.job = 'find pollen';
   this.canFly = true;
@@ -8,9 +8,8 @@ var ForagerBee = function() {
 
 };
 
-ForagerBee.prototype.eat = function() {
-
-};
+ForagerBee.prototype = Object.create(Bee.prototype);
+ForagerBee.prototype.constructor = ForagerBee;
 
 ForagerBee.prototype.forage = function(treasure) {
 
