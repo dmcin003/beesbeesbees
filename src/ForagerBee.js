@@ -10,10 +10,10 @@ var ForagerBee = function() {
 
 ForagerBee.prototype.eat = function() {
 
-}
+};
 
-ForagerBee.prototype.forage = function() {
-  var treasure = 'treasure';
+ForagerBee.prototype.forage = function(treasure) {
+
   this.treasureChest.push(treasure);
-}
+};
 
